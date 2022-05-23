@@ -1,1 +1,1 @@
-# petclinic
+# pet-clinic
