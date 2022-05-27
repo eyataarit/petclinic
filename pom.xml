@@ -17,7 +17,7 @@
 
 	<groupId>springframework</groupId>
 	<artifactId>petclinic</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>petclinic</name>
 	<description>petclinic</description>
 
@@ -55,6 +55,6 @@
 	</build>
 	<scm>
 		<developerConnection>scm:git:https://github.com/eyataarit/petclinic.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>petclinic-0.0.2</tag>
   </scm>
 </project>
