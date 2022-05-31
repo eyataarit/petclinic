@@ -5,6 +5,25 @@
     <title>Owners List</title>
 </head>
 <body>
-<h1 th:text="'list of owners'">List of OWNERS </h1>
+<!--/*@thymesVar id="owner" type="springframework.model.Owner"*/-->
+
+<h1 th:text="'list of Owners'">List of OWNERS </h1>
+<table >
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- owners is an attribute in the ownerController -->
+    <tr th:each="owner : ${owners}">
+        <td th:text="${owner.id}">1</td>
+        <td th:text="${owner.firstName}">Aya</td>
+        <td th:text="${owner.lastName}">Taarit</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
