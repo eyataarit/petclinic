@@ -23,7 +23,6 @@ public class DataLoader implements CommandLineRunner {
         this.vetService = vetService;
         this.specialtyService = specialtyService;
         this.visitService = visitService;
-
         this.petTypeService = petTypeService;
     }
 
@@ -63,6 +62,7 @@ public class DataLoader implements CommandLineRunner {
         catVisit.setDate(LocalDate.now());
         catVisit.setDescription("sneezy kitty");
 
+        visitService.save(catVisit);
 
 
         System.out.println("Loaded owners....");

@@ -14,11 +14,9 @@ import java.util.Set;
 public class PetSDJpaService  implements PetService {
 
     private final PetRepository petRepository;
-
     public PetSDJpaService(PetRepository petRepository) {
         this.petRepository = petRepository;
     }
-
     @Override
     public Set<Pet> findAll() {
         Set<Pet> pets = new HashSet<>();

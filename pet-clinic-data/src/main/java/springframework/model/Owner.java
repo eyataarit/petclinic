@@ -1,6 +1,7 @@
 package springframework.model;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -18,7 +19,7 @@ public class Owner extends Person{
 
     @Column(name = "pets")
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
-    private Set<Pet> pets;
+    private Set<Pet> pets = new HashSet<>();
 
     public String getAddress() {return address;}
     public void setAddress(String address) { this.address = address;}
