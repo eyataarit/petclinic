@@ -1,10 +1,12 @@
 package springframework.services.map;
 
+import org.springframework.stereotype.Service;
 import springframework.model.Visit;
 import springframework.services.VisitService;
 
 import java.util.Set;
 
+@Service
 public class VisitServiceMap extends AbstractMapService<Visit,Long> implements VisitService {
 
     @Override
